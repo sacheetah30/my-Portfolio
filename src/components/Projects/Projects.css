@@ -123,6 +123,22 @@
     transition: opacity 0.3s ease-in-out;
   }
   
+  .tags {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  
+  .tag {
+    background-color: #eee;
+    border-radius: 6px;
+    padding: 1px 5px;
+    font-size: 6px;
+    color: #333;
+  }
+  
+
   /* Slide-in animation */
   @keyframes slideIn {
     from {
@@ -132,6 +148,63 @@
     to {
       opacity: 1;
       transform: translateY(0);
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .projects-section {
+      padding: 20px 10px;
+    }
+  
+    .projects-heading {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+  
+    .filter-bar {
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+  
+    .filter-bar button {
+      padding: 6px 12px;
+      font-size: 0.7rem;
+      margin: 4px;
+    }
+  
+    .projects-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+  
+    .project-box {
+      width: 90%;
+      max-width: 90%;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    }
+  
+    .project-description h3 {
+      font-size: 0.8rem;
+      margin: 8px 0 4px;
+    }
+  
+    .project-description p {
+      font-size: 0.7rem;
+    }
+  
+    .project-image {
+      border-radius: 6px 6px 0 0;
+    }
+  
+    .tag {
+      font-size: 0.6rem;
+      padding: 2px 4px;
+    }
+  
+    .project-icon {
+      font-size: 2rem;
     }
   }
   

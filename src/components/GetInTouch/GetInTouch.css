@@ -2,17 +2,17 @@
 
 #getintouch {
   text-align: center;
-  padding: 60px 20px;
+  padding: 40px 20px; /* Reduced vertical padding */
   background-color: #f4f4f4;
   border-radius: 8px;
-  margin-bottom: 80px;
+  margin-bottom: 40px; /* Reduced bottom margin */
 }
 
 #getintouch h2 {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 2rem;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 #getintouch p {
@@ -20,7 +20,7 @@
   font-weight: 400;
   font-size: 1rem;
   color: #333;
-  margin-bottom: 30px;
+  margin-bottom: 20px; /* Less space below text */
 }
 
 #getintouch p a {
@@ -29,21 +29,27 @@
 }
 
 #getintouch p i {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   margin-right: 5px;
 }
 
 .social-media {
   display: flex;
   justify-content: center;
+  align-items: flex-start; /* Align icons at the top */
   flex-wrap: wrap;
-  gap: 20px;
-  margin-top: 30px;
+  gap: 15px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .social-icon {
-  text-align: center;
-  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 80px;
+  min-height: 80px; /* Ensures equal height */
 }
 
 .social-icon a {
@@ -52,58 +58,30 @@
 }
 
 .social-icon i {
-  font-size: 2rem;
-  margin-bottom: 5px;
+  font-size: 1.7rem;
+  margin-bottom: 4px;
 }
 
 .social-icon span {
   display: block;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 
-/* ------------------------- */
-/* 📱 Responsive Design 👇   */
-/* ------------------------- */
+/* ------------------------ */
+/* 📱 Mobile Responsiveness */
+/* ------------------------ */
 
 @media (max-width: 768px) {
   #getintouch {
-    padding: 40px 15px;
-    margin-bottom: 60px;
+    padding: 0px;
+    margin: 0px;
   }
 
   #getintouch h2 {
     font-size: 1.5rem;
-    margin-bottom: 8px;
-  }
-
-  #getintouch p {
-    font-size: 0.95rem;
-    margin-bottom: 20px;
-  }
-
-  #getintouch p i {
-    font-size: 1.2rem;
-  }
-
-  .social-icon {
-    width: 80px;
-  }
-
-  .social-icon i {
-    font-size: 1.6rem;
-  }
-
-  .social-icon span {
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 480px) {
-  #getintouch h2 {
-    font-size: 1.3rem;
   }
 
   #getintouch p {
@@ -111,7 +89,8 @@
   }
 
   .social-icon {
-    width: 70px;
+    width: 50px;
+    min-height: 70px;
   }
 
   .social-icon i {
@@ -119,6 +98,6 @@
   }
 
   .social-icon span {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
   }
 }

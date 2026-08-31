@@ -1,5 +1,5 @@
 .home-section {
-  background-image: url('../../assets/images/Background.jpg');
+  background-image: url('../../assets/images/Background.jpeg');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -25,7 +25,7 @@
 }
 
 .home-content p span {
-  color: #ff6347c3;
+  color: #17015ac3;
   font-size: medium;
   font-style: italic;
 }
@@ -37,7 +37,7 @@
 }
 
 .home-content h1 span {
-  color: #ff6347;
+  color: #01083a;
 }
 
 .home-content h3 {

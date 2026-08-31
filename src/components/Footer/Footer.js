@@ -7,7 +7,7 @@ const Footer = () => {
     <footer id="footer">
       <div className="footer-content">
         <span className="footer-symbol">©</span>
-        <span className="footer-symbol">Spider.</span>
+        <span className="footer-symbol">Sachi</span>
       </div>
     </footer>
   );

@@ -11,7 +11,7 @@
 }
 
 #about h2 span {
-  color: #ff6347; /* Tomato color */
+  color: #17015ac3; /* Tomato color */
 }
 
 #about p {
@@ -26,18 +26,20 @@
 .collapsed {
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 5; /* Show only 5 lines */
+
   -webkit-box-orient: vertical;
 }
 
 .expanded {
-  -webkit-line-clamp: unset; /* Show full text */
+  display: block;
+  overflow: visible;
+  -webkit-box-orient: initial;
 }
 
 .read-more-btn {
   margin-top: 10px;
   font-size: 1rem;
-  background-color: #ff6347;
+  background-color: #17015ac3;
   color: white;
   border: none;
   padding: 8px 16px;
@@ -78,7 +80,7 @@ h3 {
   font-weight: 600; /* Semi-bold font */
   font-size: 1.5rem; /* Adjusts the font size */
   margin-bottom: 10px; /* Adds space below the heading */
-  color: #ff6347;
+  color: #17015ac3;
 }
 
 .box p {

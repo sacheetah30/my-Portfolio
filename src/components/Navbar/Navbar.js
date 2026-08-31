@@ -27,7 +27,7 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${scrolled ? 'navbar-scrolled' : ''}`}>
       <div className="navbar-left">
-        <strong><span>Spider</span>.</strong>
+        <strong><span>Sachi</span>.</strong>
       </div>
       <div className="navbar-right">
         <div className="hamburger-icon" onClick={toggleMenu}>
@@ -36,7 +36,7 @@ const Navbar = () => {
         <ul className={`navbar-links ${isMenuOpen ? 'active' : ''}`}>
           <li><a href="#home" onClick={toggleMenu}>Home</a></li>
           <li><a href="#about" onClick={toggleMenu}>About</a></li>
-          <li><a href="https://drive.google.com/file/d/1aDFuMPpcbIg3UmUzNTz3TLkxM7jalNUT/view?usp=sharing" target="_blank" download="My_Resume.pdf" className="resume-button" onClick={toggleMenu}>Resume</a></li>
+          <li><a href="https://drive.google.com/file/d/11tgthALyh5X8hYc-RmpurR4PdwpYvqcB/view?usp=drive_link" target="_blank" download="My_Resume.pdf" className="resume-button" onClick={toggleMenu}>Resume</a></li>
           <li><a href="#getintouch" onClick={toggleMenu}>Get In Touch</a></li>
         </ul>
       </div>

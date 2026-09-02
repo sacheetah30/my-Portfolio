@@ -49,4 +49,4 @@ The portfolio is deployed using GitHub Pages. Here’s how the deployment is man
    npm run deploy
    ```
 
-link: https://leju-b.github.io/my-Portfolio/
+

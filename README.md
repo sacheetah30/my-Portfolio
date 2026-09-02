@@ -1,11 +1,5 @@
-# Personal Portfolio
+#  Portfolio
 
-**Author**: Leju B 
-**Date**: 08/08/2024
-
----
-
-## **Overview**
 
 This repository contains the code for my personal portfolio, created using React . The portfolio showcases my skills, projects, and experience. It is deployed using GitHub Pages for easy access and sharing.
 

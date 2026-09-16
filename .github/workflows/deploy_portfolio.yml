@@ -2,8 +2,8 @@ name: Deploy Portfolio
 
 on:
   push:
-    branches: [main]      # runs every time you push to main
-  workflow_dispatch:      # lets you manually trigger from the Actions tab too
+    branches: [main]
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -21,10 +21,25 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Upload site as artifact
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build portfolio
+        run: npm run build
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .          # deploy everything in repo root
+          path: ./build
 
   deploy:
     needs: build

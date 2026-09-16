@@ -15,7 +15,7 @@ const About = () => {
       I like DevOps so I'm diving deep into AWS, Linux, Docker, and real-world automation.<br></br>
 
 I'm also exploring cloud security and best practices to keep deployments safe, stable, and scalable. Alongside my learning journey in tech, <br></br>
-I love networking,volunteering, socializing, and hiking.<br></br>
+I love networking, volunteering, socializing, and hiking.<br></br>
 
       </p>
       <button onClick={toggleExpansion} className="read-more-btn">

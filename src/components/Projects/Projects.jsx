@@ -7,6 +7,7 @@ const GITHUB_USERNAME = 'sacheetah30'; // change if this isn't your username
 // Decode GitHub's base64 README content (handles UTF-8 properly)
 const decodeBase64 = (base64String) => {
   try {
+    
     const binary = atob(base64String.replace(/\n/g, ''));
     const bytes = Uint8Array.from(binary, (char) => char.charCodeAt(0));
     return new TextDecoder('utf-8').decode(bytes);

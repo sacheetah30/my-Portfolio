@@ -33,7 +33,7 @@ const Projects = () => {
         const repos = await reposRes.json();
 
         // Skip forks if you only want original work — remove this filter if you want forks too
-        //const ownRepos = repos.filter((repo) => !repo.fork);
+        const ownRepos = repos.filter((repo) => !repo.fork);
 
         // Fetch each repo's README in parallel
         const withReadmes = await Promise.all(
@@ -140,7 +140,7 @@ const Projects = () => {
               {expandedId === project.id && (
                 <div className="project-readme">
                   {project.readme ? (
-                    <pre>{project.readme}</pre>
+                    <ReactMarkdown>{project.readme}</ReactMarkdown>
                   ) : (
                     <p>No README available for this project.</p>
                   )}
@@ -150,9 +150,6 @@ const Projects = () => {
           ))
         )}
       </div>
-      <div className="project-readme">
-  {project.readme ? <ReactMarkdown>{project.readme}</ReactMarkdown> : <p>No README available.</p>}
-</div>
     </section>
   );
 };
